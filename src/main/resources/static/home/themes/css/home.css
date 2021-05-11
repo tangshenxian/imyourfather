@@ -171,7 +171,7 @@ a:hover, a:focus {outline:inherit}
 
 .glyphicon {padding-left:2px;}
 
-.container blockquote .Abstract-text-p {padding:10px 0 0 30px; color:#999; font-size:14px; line-height:1.5em; background-size:24px auto; background-repeat:no-repeat; background-position:left top; background-image:url("../img/quote.svg")}
+.container blockquote .Abstract-text-p {padding:10px 0 0 30px; color:#999; font-size:14px; line-height:1.5em; background-size:24px auto; background-repeat:no-repeat; background-position:left top;}
 
 blockquote {border-left:none; font-size:14px; line-height:1.5em; padding-top:20px; padding-left:0; color:#999;}
 
