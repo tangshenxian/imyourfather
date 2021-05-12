@@ -1,7 +1,6 @@
 package com.shenxian.config;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.servlet.LocaleResolver;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,179 +1,191 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" th:href="@{login/img/apple-icon.png}">
-    <link rel="icon" type="image/png" th:href="@{login/img/favicon.png}">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Login Page - Now UI Kit by Creative Tim</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <!-- CSS Files -->
-    <link th:href="@{login/css/bootstrap.min.css}" rel="stylesheet" />
-    <link th:href="@{login/css/now-ui-kit.css?v=1.1.0}" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link th:href="@{login/css/demo.css}" rel="stylesheet" />
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="" />
-    <!--  Social tags      -->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+  <meta charset="utf-8"/>
+  <link rel="apple-touch-icon" sizes="76x76" th:href="@{login/img/apple-icon.png}">
+  <link rel="icon" type="image/png" th:href="@{login/img/favicon.png}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Login Page - Now UI Kit by Creative Tim</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport'/>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+  <!-- CSS Files -->
+  <link th:href="@{login/css/bootstrap.min.css}" rel="stylesheet"/>
+  <link th:href="@{login/css/now-ui-kit.css?v=1.1.0}" rel="stylesheet"/>
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link th:href="@{login/css/demo.css}" rel="stylesheet"/>
+  <!-- Canonical SEO -->
+  <link rel="canonical" href=""/>
+  <!--  Social tags      -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
 
 </head>
 
 <body class="login-page sidebar-collapse">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
-        <div class="container">
-            <div class="dropdown button-dropdown">
-                <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
-                    <span class="button-bar"></span>
-                    <span class="button-bar"></span>
-                    <span class="button-bar"></span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-header">Dropdown header</a>
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">One more separated link</a>
-                </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+  <div class="container">
+    <div class="dropdown button-dropdown">
+      <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+        <span class="button-bar"></span>
+        <span class="button-bar"></span>
+        <span class="button-bar"></span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-header">Dropdown header</a>
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">One more separated link</a>
+      </div>
+    </div>
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="#" rel="tooltip" data-placement="bottom">
+        Now Ui Kit
+      </a>
+      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+              aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" data-nav-image="assets/img/blurred-image-1.jpg">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Back to Kit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/issues">Have an issue?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="#CreativeTim"
+             target="_blank">
+            <i class="fa fa-twitter"></i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#CreativeTim"
+             target="_blank">
+            <i class="fa fa-facebook-square"></i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#"
+             target="_blank">
+            <i class="fa fa-instagram"></i>
+            <p class="d-lg-none d-xl-none">Instagram</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+<div class="page-header" filter-color="orange">
+  <div class="page-header-image" th:style="'background-image:url(login/img/login.jpg)'"></div>
+  <div class="container">
+    <div class="col-md-4 content-center">
+      <div class="card card-login card-plain">
+        <form class="form" method="get" th:action="@{/user/login}">
+          <div class="header header-primary text-center">
+            <div class="logo-container">
+              <img th:src="@{login/img/now-logo.png}" alt="">
             </div>
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="#" rel="tooltip" data-placement="bottom">
-                    Now Ui Kit
-                </a>
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" data-nav-image="assets/img/blurred-image-1.jpg">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Back to Kit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/issues">Have an issue?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="#CreativeTim" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                            <p class="d-lg-none d-xl-none">Twitter</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#CreativeTim" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none d-xl-none">Facebook</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                            <p class="d-lg-none d-xl-none">Instagram</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
-    <div class="page-header" filter-color="orange">
-        <div class="page-header-image" th:style="'background-image:url(login/img/login.jpg)'"></div>
-        <div class="container">
-            <div class="col-md-4 content-center">
-                <div class="card card-login card-plain">
-                    <form class="form" method="" action="">
-                        <div class="header header-primary text-center">
-                            <div class="logo-container">
-                                <img th:src="@{login/img/now-logo.png}" alt="">
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="input-group form-group-no-border input-lg">
+          </div>
+          <div class="content">
+            <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons users_circle-08"></i>
                                 </span>
-                                <input type="text" class="form-control" th:placeholder="#{login.username}">
-                            </div>
-                            <div class="input-group form-group-no-border input-lg">
+              <input type="text" name="username" class="form-control" th:placeholder="#{login.username}">
+            </div>
+            <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons text_caps-small"></i>
                                 </span>
-                                <input type="text" class="form-control" th:placeholder="#{login.password}"/>
-                            </div>
-                        </div>
-                        <div class="footer text-center">
-                            <a th:href="@{home/index}" class="btn btn-primary btn-round btn-lg btn-block" th:text="#{login.tip}"></a>
-                        </div>
-                        <div style="display: flex">
-                            <div class="flex1">
-                                <h6>
-                                    <a href="#pablo" class="link" th:text="#{login.createAccount}"></a>
-                                </h6>
-                            </div>
-                            <div class="flex1">
-                                <h6>
-                                    <a class="link" th:href="@{/login(l='zh_CN')}">中文</a>
-                                </h6>
-                            </div>
-                            <div class="flex1">
-                                <h6>
-                                    <a class="link" th:href="@{/login(l='en_US')}">English</a>
-                                </h6>
-                            </div>
-                            <div class="flex1">
-                                <h6>
-                                    <a href="#pablo" class="link" th:text="#{login.help}"></a>
-                                </h6>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+              <input type="password" name="password" class="form-control" th:placeholder="#{login.password}"/>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                MIT License
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, Designed by Invision. Coded by Creative Tim.
-                </div>
+            <div class="input-group form-group-no-border input-lg text-center" th:if="${not #strings.isEmpty(msg)}">
+              <div style="display: flex; width: 100%;">
+                <p th:text="${msg}" class="text-danger flex1"></p>
+              </div>
+
             </div>
-        </footer>
+          </div>
+          <div class="footer text-center">
+            <button type="submit" class="btn btn-primary btn-round btn-lg btn-block" th:text="#{login.tip}"></button>
+          </div>
+          <div style="display: flex">
+            <div class="flex1">
+              <h6>
+                <a href="#pablo" class="link" th:text="#{login.createAccount}"></a>
+              </h6>
+            </div>
+            <div class="flex1">
+              <h6>
+                <a class="link" th:href="@{/login(l='zh_CN')}">中文</a>
+              </h6>
+            </div>
+            <div class="flex1">
+              <h6>
+                <a class="link" th:href="@{/login(l='en_US')}">English</a>
+              </h6>
+            </div>
+            <div class="flex1">
+              <h6>
+                <a href="#pablo" class="link" th:text="#{login.help}"></a>
+              </h6>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              Creative Tim
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              MIT License
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        , Designed by Invision. Coded by Creative Tim.
+      </div>
+    </div>
+  </footer>
+</div>
 </body>
 <!--   Core JS Files   -->
 <script th:src="@{login/js/core/jquery.3.2.1.min.js}" type="text/javascript"></script>
