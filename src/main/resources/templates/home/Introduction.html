@@ -67,6 +67,10 @@
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
                th:href="@{contact}">联系我们</a>
           </li>
+          <li class="dropdown" th:if="${not #strings.isEmpty(session.loginUser)}">
+            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle" style="color: #9ddfff"
+               th:href="@{/user/logout}" title="点击退出登录">欢迎您，[[${session.loginUser}]]</a>
+          </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
