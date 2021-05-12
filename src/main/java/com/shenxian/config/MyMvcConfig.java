@@ -1,6 +1,8 @@
 package com.shenxian.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -27,5 +29,10 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/home/Introduction").setViewName("home/Introduction");
         registry.addViewController("/home/Product").setViewName("home/Product");
         registry.addViewController("/home/Service").setViewName("home/Service");
+    }
+
+    @Bean(name="localeResolver")
+    public LocaleResolver myLocaleResolver() {
+        return new MyLocaleResolver();
     }
 }

@@ -1,6 +1,10 @@
 server:
   port: 9999
-
+  servlet:
+    context-path: /imyourfather
 spring:
   thymeleaf:
     cache: false
+  #国际化
+  messages:
+    basename: i18n.login

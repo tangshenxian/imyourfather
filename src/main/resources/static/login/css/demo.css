@@ -525,3 +525,7 @@
         display: none !important;
     }
 }
+
+.flex1 {
+    flex: 1;
+}
