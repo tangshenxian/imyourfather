@@ -32,55 +32,6 @@
 <div class=" container-fluid header-main header-section">
   <div class="header-back"></div>
   <div th:replace="~{common/commons :: headerbar(active='index')}"></div>
-  <!--<nav class="navbar navbar-default  navbar-brands  navbar-abouts" th:fragment="headerbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
-                class="navbar-toggle collapsed" type="button">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a th:href="@{/home/index}" class="navbar-logo navbar-brand "></a>
-      </div>
-      <div class="collapse navbar-collapse navbar-right" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/index}"
-               title="Home">首页</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/about}"
-               title="About us">关于我们</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/Product}" title="Product service">产品服务</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/Case}"
-               title="Classic case">经典案例</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/Service}" title="Micro business service">微商服务</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/contact}" title="Contact us">联系我们</a>
-          </li>
-          <li class="dropdown" th:if="${not #strings.isEmpty(session.loginUser)}">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle" style="color: #9ddfff"
-               th:href="@{/user/logout}" title="点击退出登录">欢迎您，[[${session.loginUser}]]</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>-->
   <div class="container container-zindex container-index">
     <img class="img-responsive" th:src="@{/home/themes/img/showcase-header.png}" about="" alt="">
     <h1>移动公关第一品牌</h1>
