@@ -5,25 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>我是你爹</title>
-  <link rel="icon" type="image/png" th:href="@{themes/icon/favicon.png}">
+  <link rel="icon" type="image/png" th:href="@{/home/themes/icon/favicon.png}">
 
   <!-- 新 Bootstrap IE8 CSS 文件 -->
-  <script th:src="@{js/html5shiv.min.js}"></script>
+  <script th:src="@{/home/js/html5shiv.min.js}"></script>
 
   <!-- 新 Bootstrap IE9 CSS 文件 -->
-  <script th:src="@{js/respond.min.js}"></script>
+  <script th:src="@{/home/js/respond.min.js}"></script>
 
   <!-- 新 Bootstrap 核心 CSS 文件 -->
-  <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{/home/css/bootstrap.min.css}">
 
   <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-  <script th:src="@{js/jquery.min.js}"></script>
+  <script th:src="@{/home/js/jquery.min.js}"></script>
 
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-  <script th:src="@{js/bootstrap.min.js}"></script>
+  <script th:src="@{/home/js/bootstrap.min.js}"></script>
 
   <!-- 最新的 Bootstrap  自定义样式 文件 -->
-  <link th:href="@{themes/css/home.css}" rel="stylesheet" type="text/css">
+  <link th:href="@{/home/themes/css/home.css}" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -41,36 +41,36 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a th:href="@{index}" class="navbar-logo navbar-brand "></a>
+        <a th:href="@{/home/index}" class="navbar-logo navbar-brand "></a>
       </div>
       <div class="collapse navbar-collapse navbar-right" id="navbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="active">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{index}"
+               th:href="@{/home/index}"
                title="Home">首页</a>
           </li>
           <li class="">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{about}"
+               th:href="@{/home/about}"
                title="About us">关于我们</a>
           </li>
           <li class="dropdown">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{Product}" title="Product service">产品服务</a>
+               th:href="@{/home/Product}" title="Product service">产品服务</a>
           </li>
           <li class="dropdown">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{Case}"
+               th:href="@{/home/Case}"
                title="Classic case">经典案例</a>
           </li>
           <li class="dropdown">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{Service}" title="Micro business service">微商服务</a>
+               th:href="@{/home/Service}" title="Micro business service">微商服务</a>
           </li>
           <li class="dropdown">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{contact}" title="Contact us">联系我们</a>
+               th:href="@{/home/contact}" title="Contact us">联系我们</a>
           </li>
           <li class="dropdown" th:if="${not #strings.isEmpty(session.loginUser)}">
             <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle" style="color: #9ddfff"
@@ -81,7 +81,7 @@
     </div>
   </nav>
   <div class="container container-zindex container-index">
-    <img class="img-responsive" th:src="@{themes/img/showcase-header.png}" about="" alt="">
+    <img class="img-responsive" th:src="@{/home/themes/img/showcase-header.png}" about="" alt="">
     <h1>移动公关第一品牌</h1>
     <p>未来,我们一直在路上 移动互联网时代的创意革命 “北京前推”</p>
   </div>
@@ -94,24 +94,24 @@
 <div class="container marketing">
   <div class="row">
     <div class="col-lg-3">
-      <img width="140" height="140" alt="Generic placeholder image" th:src="@{themes/img/pd/Spread.png}" class="">
+      <img width="140" height="140" alt="Generic placeholder image" th:src="@{/home/themes/img/pd/Spread.png}" class="">
       <h2>社会化媒体传播</h2>
       <p>以落地活动为主要传播信息，定期将文字、图片及视频短片传到官方微信、微博进行传播。</p>
     </div><!-- 社会化媒体传播 -->
     <div class="col-lg-3">
 
-      <img width="140" height="140" alt="Generic placeholder image" th:src="@{themes/img/pd/mobile.png}" class="">
+      <img width="140" height="140" alt="Generic placeholder image" th:src="@{/home/themes/img/pd/mobile.png}" class="">
       <h2>移动互联网搭建</h2>
       <p>根据客户的需求，市场状况，企业情况等进行搭建适合客户的微信。 </p>
     </div><!-- 移动互联网搭建 -->
     <div class="col-lg-3">
-      <img width="140" height="140" alt="Generic placeholder image" th:src="@{themes/img/pd/weixin.png}" class="">
+      <img width="140" height="140" alt="Generic placeholder image" th:src="@{/home/themes/img/pd/weixin.png}" class="">
       <h2>微信全案营销</h2>
       <p>为企业量身定制独立的全案营销方案，全方位的为客户提供有效的解决方案。</p>
     </div><!-- 微信全案营销 -->
 
     <div class="col-lg-3">
-      <img width="140" height="140" alt="Generic placeholder image" th:src="@{themes/img/pd/web.png}" class="">
+      <img width="140" height="140" alt="Generic placeholder image" th:src="@{/home/themes/img/pd/web.png}" class="">
       <h2>定制项目开发</h2>
       <p>丰富Web组件，可二次开发的面板，可快速构建界面出色、体验优秀的跨屏页面。</p>
     </div><!-- 定制项目开发 -->
@@ -127,13 +127,13 @@
       <div data-ride="carousel" class="carousel slide" id="myCarousel">
         <div role="listbox" class="carousel-inner">
           <div class="item">
-            <img alt="First slide" th:src="@{themes/img/banner/banner.png}" class="first-slide">
+            <img alt="First slide" th:src="@{/home/themes/img/banner/banner.png}" class="first-slide">
           </div>
           <div class="item active">
-            <img alt="Second slide" th:src="@{themes/img/banner/banner.png}" class="second-slide">
+            <img alt="Second slide" th:src="@{/home/themes/img/banner/banner.png}" class="second-slide">
           </div>
           <div class="item">
-            <img alt="Third slide" th:src="@{themes/img/banner/banner.png}" class="third-slide">
+            <img alt="Third slide" th:src="@{/home/themes/img/banner/banner.png}" class="third-slide">
           </div>
         </div>
         <!--<a data-slide="prev" role="button" href="#myCarousel" class="left carousel-control">-->
@@ -187,49 +187,49 @@
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.qunar.com/" target="_blank" title="去哪儿网">
           <img alt="100%x110" data-src="holder.js/100%x110" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h1.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h1.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.amazon.cn/" target="_blank" title="卓越亚马逊">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h2.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h2.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.cebbank.com/" target="_blank" title="光大银行">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h3.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h3.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.lexus.com.cn/" target="_blank" title="雷克萨斯">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h4.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h4.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.haval.cn/" target="_blank" title="哈佛网">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h5.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h5.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.yonyou.com/" target="_blank" title="用友yonyou">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h6.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h6.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.xiaoniu88.com/" target="_blank" title="小牛在线">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h7.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h7.png}" data-holder-rendered="true">
         </a>
       </div>
       <div class="col-xs-6 col-md-3">
         <a class="thumbnail thumbnail-bottom" href="http://www.hzkywy.com/" target="_blank" title="开元物业">
           <img alt="100%x180" data-src="holder.js/100%x180" style="height: 110px; width: 100%; display: block;"
-               th:src="@{themes/img/code/h8.png}" data-holder-rendered="true">
+               th:src="@{/home/themes/img/code/h8.png}" data-holder-rendered="true">
         </a>
       </div>
     </div>
@@ -244,7 +244,7 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="widget">
-          <h4 class="title"><img th:src="@{themes/img/logo-blue.png}"></h4>
+          <h4 class="title"><img th:src="@{/home/themes/img/logo-blue.png}"></h4>
           <div class="content recent-post">
             <div class="recent-single-post">
               <div class="date">QIANTUI移动公关第一品牌，我们拥有最全面的媒介数据库资源，我们能给您提供全面的服务 。</div>
@@ -259,11 +259,11 @@
         <div class="widget">
           <h4 class="title"></h4>
           <div class="content-about">
-            <div><a th:href="@{about}">关于我们</a></div>
-            <div><a th:href="@{contact}">联系我们</a></div>
+            <div><a th:href="@{/home/about}">关于我们</a></div>
+            <div><a th:href="@{/home/contact}">联系我们</a></div>
             <div><a href="http://www.lagou.com/gongsi/j71361" target="_blank">加入我们</a></div>
-            <div><a th:href="@{Product}">产品服务</a></div>
-            <div><a th:href="@{Case}">经典案例</a></div>
+            <div><a th:href="@{/home/Product}">产品服务</a></div>
+            <div><a th:href="@{/home/Case}">经典案例</a></div>
           </div>
         </div>
       </div>
@@ -271,18 +271,18 @@
         <div class="widget">
           <h4 class="title"></h4>
           <div class="content-about">
-            <div><a th:href="@{Introduction}">平台优势</a></div>
-            <div><a th:href="@{Introduction}">服务条款</a></div>
-            <div><a th:href="@{Introduction}">免责声明</a></div>
-            <div><a th:href="@{Introduction}">合作代理</a></div>
-            <div><a th:href="@{Introduction}">帮助中心</a></div>
+            <div><a th:href="@{/home/Introduction}">平台优势</a></div>
+            <div><a th:href="@{/home/Introduction}">服务条款</a></div>
+            <div><a th:href="@{/home/Introduction}">免责声明</a></div>
+            <div><a th:href="@{/home/Introduction}">合作代理</a></div>
+            <div><a th:href="@{/home/Introduction}">帮助中心</a></div>
           </div>
         </div>
       </div>
       <div class="col-sm-2">
         <div class="widget">
           <div class="content-about">
-            <img th:src="@{themes/img/ewm.jpg}" width="148" height="148"
+            <img th:src="@{/home/themes/img/ewm.jpg}" width="148" height="148"
                  style="border:1px solid #eee; padding:5px;" title="扫描二维码。关注我们。">
           </div>
         </div>
