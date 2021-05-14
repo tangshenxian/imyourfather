@@ -29,52 +29,7 @@
 <!--------- header  begin------------->
 <div class=" container-fluid header-main header-section navbar-about service-background">
   <div class="header-back"></div>
-  <nav class="navbar navbar-default  navbar-brands  navbar-abouts">
-    <div class="container">
-      <div class="navbar-header">
-        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
-                class="navbar-toggle collapsed" type="button">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a th:href="@{/home/index}" class="navbar-logo navbar-brand "></a>
-      </div>
-      <div class="collapse navbar-collapse navbar-right" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/index}">首页</a>
-          </li>
-          <li class="">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/about}">关于我们</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/Product}">产品服务</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/Case}">经典案例</a>
-          </li>
-          <li class="active">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/Service}">微商服务</a>
-          </li>
-          <li class="dropdown">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle"
-               th:href="@{/home/contact}">联系我们</a>
-          </li>
-          <li class="dropdown" th:if="${not #strings.isEmpty(session.loginUser)}">
-            <a aria-expanded="false" role="button" aria-haspopup="true" class="dropdown-toggle" style="color: #9ddfff"
-               th:href="@{/user/logout}" title="点击退出登录">欢迎您，[[${session.loginUser}]]</a>
-          </li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+  <div th:replace="~{common/commons :: headerbar(active='Service')}"></div>
   <div class="container container-zindex cover-container am-animation-scale-up"
        data-am-scrollspy="{animation: 'scale-up', repeat: false}">
     <h1><span>微商服务</span><br>我们有一种实力</h1>
@@ -178,57 +133,7 @@
 <div style="height:30px;"></div>
 
 <!--------footer begin-------->
-<footer class="main-footer  main-footer1">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="widget">
-          <h4 class="title"><img th:src="@{/home/themes/img/logo-blue.png}"></h4>
-          <div class="content recent-post">
-            <div class="recent-single-post">
-              <div class="date">QIANTUI移动公关第一品牌，为您打造全新的平台，来体现你在业界的价值，从而提升您在业界的知名度。</div>
-            </div>
-            <div class="recent-single-post"><a class="post-title" href="#">XXX</a>
-              <div class="date" style="padding-top:10px;">Copyright © 2020</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="widget">
-          <h4 class="title"></h4>
-          <div class="content-about">
-            <div><a href="#">关于我们</a></div>
-            <div><a href="#">加入我们</a></div>
-            <div><a href="#">联系我们</a></div>
-            <div><a href="#">产品服务</a></div>
-            <div><a href="#">友情连接</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="widget">
-          <h4 class="title"></h4>
-          <div class="content-about">
-            <div><a href="#">平台优势</a></div>
-            <div><a href="#">服务条款</a></div>
-            <div><a href="#">帮助中心</a></div>
-            <div><a href="#">免责声明</a></div>
-            <div><a href="#">合作代理</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="widget">
-          <div class="content-about">
-            <img th:src="@{/home/themes/img/ewm.jpg}" width="148" height="148"
-                 style="border:1px solid #eee; padding:5px;" title="扫描二维码。关注我们。">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<div th:replace="~{common/commons :: footerbar}"></div>
 <!--------footer End-------->
 
 <script type="text/javascript">

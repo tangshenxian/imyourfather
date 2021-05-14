@@ -28,7 +28,8 @@
 <!--------- header  begin------------->
 <div class=" container-fluid header-main header-section navbar-about">
   <div class="header-back"></div>
-  <nav class="navbar navbar-default  navbar-brands  navbar-abouts">
+  <div th:replace="~{common/commons :: headerbar(active='about')}"></div>
+  <!--<nav class="navbar navbar-default  navbar-brands  navbar-abouts">
     <div class="container">
       <div class="navbar-header">
         <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
@@ -71,9 +72,9 @@
                th:href="@{/user/logout}" title="点击退出登录">欢迎您，[[${session.loginUser}]]</a>
           </li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>&lt;!&ndash;/.nav-collapse &ndash;&gt;
     </div>
-  </nav>
+  </nav>-->
   <div class="container container-zindex cover-container am-animation-scale-up"
        data-am-scrollspy="{animation: 'scale-up', repeat: false}">
     <h1><span>关于我们</span><br>我们是自由与创造的先行者</h1>
@@ -193,7 +194,8 @@
 
 
 <!--------footer begin-------->
-<footer class="main-footer  main-footer1">
+<div th:replace="~{common/commons :: footerbar}"></div>
+<!--<footer class="main-footer  main-footer1">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -243,7 +245,8 @@
       </div>
     </div>
   </div>
-</footer><!--------footer End-------->
+</footer>-->
+<!--------footer End-------->
 
 
 <script th:src="@{/home/themes/js/stickUp.js}" type="text/javascript"></script>
